@@ -339,12 +339,20 @@
     --help-command-background: #24283b;
   }
 
+  /* custom fonts */
+
+  @font-face {
+    font-family: 'Inconsolata';
+    src: url(fonts/inconsolata.ttf) format('truetype');
+  }
+
   /* root variables */
 
   :root {
     --base-border-radius: 6px;
-    --base-font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue,
-      Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial, sans-serif;
+    --base-font-family: Inconsolata, -apple-system, BlinkMacSystemFont,
+      Helvetica Neue, Helvetica, Ubuntu, Roboto, Noto, Segoe UI, Arial,
+      sans-serif;
     --base-font-size: 17px;
     --base-font-weight-black: 900;
     --base-font-weight-bold: 700;
