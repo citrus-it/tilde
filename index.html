@@ -31,12 +31,12 @@
     /**
      * The delimiter between the hours, minutes and seconds on the clock.
      */
-    clockDelimiter: ' – ',
+    clockDelimiter: ':',
 
     /**
      * Show seconds on the clock. A monospaced font is recommended for this.
      */
-    clockShowSeconds: false,
+    clockShowSeconds: true,
 
     /**
      * Show AM/PM indication when CONFIG.clockTwentyFourHours is false.
@@ -793,7 +793,7 @@
       const date = new Date();
 
       this._el.innerHTML = date
-        .toLocaleString('en-US', {
+        .toLocaleString('en-GB', {
           hour12: !this._twentyFourHour,
           hour: 'numeric',
           minute: 'numeric',
@@ -801,8 +801,7 @@
           timeZone: this._timeZone,
         })
         .replace(this._amPm ? '' : / (AM|PM)/, '')
-        .replace(/:/g, this._delimiter)
-        .replace(/^0/, '');
+        .replace(/:/g, this._delimiter);
 
       this._el.setAttribute('datetime', date.toTimeString());
     }
