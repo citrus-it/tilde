@@ -92,9 +92,8 @@
      */
     scripts: {
       q: ['bin', 'yah', 'eco', 'goo', '*'],
-      prs: ['https://github.com/pulls?q=is%3Aopen+is%3Apr+archived%3Afalse+user%3ABritishYouthBandAssociation'],
-      issues: ['https://github.com/issues?q=is%3Aopen+is%3Aissue+archived%3Afalse+user%3ABritishYouthBandAssociation'],
-      nea: ['https://docs.google.com/document/d/1ZQovfxvx8cWP7PPAtOBJ6OqH8yjoH350LneBWKsJ1H8/edit#heading=h.gjdgxs']
+      prs: ['https://github.com/pulls?utf8=%E2%9C%93&q=is%3Aopen+is%3Apr+user%3Aomniosorg'],
+      issues: ['https://github.com/search?q=org%3Aomniosorg+is%3Aissue+is%3Aopen'],
     },
 
     /**
@@ -128,12 +127,8 @@
      */
     suggestionDefaults: {
       0: ["0'8000", "0'8080"],
-      m: ["m/@andy", "m/@matt"],
-      g: ['g/matt-fidd/stratos', 'g/BritishYouthBandAssociation', 'g/matt-fidd', 'g/pulls', 'g/issues'],
-      r: ['r/r/startpages', 'r/r/worldnews', 'r/r/webdev'],
-      x: ['x/~matt-fidd', 'x/org/byba'],
+      g: ['g/omniosorg/omnios-build'],
       y: ['y/feed/subscriptions', 'y/feed/trending'],
-      '=': ['https://secure.citrus-it.net/portal/']
     },
 
     /**
@@ -164,33 +159,11 @@
         url: 'https://duckduckgo.com',
       },
       {
-        key: 'eco',
-        search: '/search?q={}',
-        url: 'https://www.ecosia.org',
-      },
-      {
-        key: 'yah',
-        search: '/search?p={}',
-        url: 'https://search.yahoo.com',
-      },
-      {
         hues: ['0', '0'],
         key: 'x',
         name: 'NPM',
         search: '/search?q={}',
         url: 'https://www.npmjs.com',
-      },
-      {
-        hues: ['0', '345'],
-        key: 'c',
-        name: 'Carbon',
-        url: 'https://carbon.now.sh',
-      },
-      {
-        hues: ['0', '340'],
-        key: 'm',
-        name: 'Mattermost',
-        url: 'https://chat.fiddaman.net/llanfyd/messages',
       },
       {
         hues: ['0', '335'],
@@ -206,31 +179,6 @@
         url: 'https://youtube.com',
       },
       {
-        hues: ['355', '335'],
-        key: '=',
-        name: 'Citrus',
-        url: 'https://www.citrus-it.net',
-      },
-      {
-        hues: ['337', '317'],
-        key: 's',
-        name: 'Stratos',
-        url: 'https://stratos.heliumdev.uk',
-      },
-      {
-        hues: ['266', '286'],
-        key: 'f',
-        name: 'Figma',
-        url: 'https://www.figma.com/files/recent',
-      },
-      {
-        hues: ['254', '234'],
-        key: 'r',
-        name: 'Reddit',
-        search: '/search?q={}',
-        url: 'https://www.reddit.com',
-      },
-      {
         hues: ['214', '234'],
         key: 'g',
         name: 'GitHub',
@@ -238,18 +186,25 @@
         url: 'https://github.com',
       },
       {
+        hues: ['214', '234'],
+        key: 'go',
+        name: 'GitHub OmniOS',
+        search: '/search?q={}',
+        url: 'https://github.com/omniosorg',
+      },
+      {
+        hues: ['214', '234'],
+        key: 'gx',
+        name: 'GitHub Oxide',
+        search: '/search?q={}',
+        url: 'https://github.com/oxidecomputer',
+      },
+      {
         hues: ['198', '218'],
         key: ';',
         name: 'MDN',
         search: '/en-US/search?q={}',
         url: 'https://developer.mozilla.org/en-US',
-      },
-      {
-        hues: ['136', '156'],
-        key: 'd',
-        name: 'Drive',
-        search: '/drive/u/0/search?q={}',
-        url: 'https://drive.google.com/drive/u/0/my-drive',
       },
       {
         key: '0',
